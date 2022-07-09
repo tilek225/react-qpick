@@ -10,7 +10,7 @@ const ProductWindow = ({ product }) => {
                 <BtnFavorites item={product} />
             </div>
             <div className='product__img'>
-                <img src={product.image} />
+                <img src={product.image} className='product__image' />
             </div>
             <div className='product__content'>
                 <h3 className='product__content-title'>{product.title}</h3>

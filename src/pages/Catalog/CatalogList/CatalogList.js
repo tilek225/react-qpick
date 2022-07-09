@@ -28,9 +28,9 @@ const CatalogList = ({ search, type, sort }) => {
                         }
                     })
                     .sort((a, b) => {
-                        if (sort === 'big') {
+                        if (sort === 'less') {
                             return b.price - a.price
-                        } else if (sort === 'less') {
+                        } else if (sort === 'big') {
                             return a.price - b.price
                         }
                         return 0

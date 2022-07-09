@@ -73,3 +73,37 @@
         }
     }
 }
+@media(max-width:648px){
+    .contacts__right{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        &-item{
+            padding: 15px;
+        }
+    }
+    .contacts__tel{
+        padding-left: 50px;
+    }
+    .contacts__info{
+        padding: 20px;
+    }
+    .contacts__map{
+        width: 400px;
+        height: 150px;
+    }
+
+}
+@media(max-width:440px){
+    .contacts{
+        &__map{
+            width: 300px;
+        }
+        &__right{
+            &-item{
+                padding: 5px;
+            }
+        }
+    }
+}

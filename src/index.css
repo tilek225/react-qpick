@@ -16,4 +16,5 @@
 }
 body{
   background: #EAEAEA;
+  overflow-x: hidden;
 }

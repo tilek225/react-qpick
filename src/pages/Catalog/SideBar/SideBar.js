@@ -67,12 +67,12 @@ const SideBar = ({
                 <button
                     className={sort === 'big' ? 'sidebar__sort-active' : 'sidebar__sort-btn'}
                     onClick={() => handleSort('big')}>
-                    К большему
+                    По возрастанию
                 </button>
                 <button
                     className={sort === 'less' ? 'sidebar__sort-active' : 'sidebar__sort-btn'}
                     onClick={() => handleSort('less')}>
-                    К меньшему
+                    К убыванию
                 </button>
             </div>
 

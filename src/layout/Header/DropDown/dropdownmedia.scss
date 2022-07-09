@@ -1,0 +1,220 @@
+@media(max-width:761px){
+    .dropdown__content{
+        padding-top: 60px;
+        width: 300px;
+        display: block;
+        position:fixed;
+        top: 0px;
+        left: 460px;
+        background: #EAEAEA;
+        border-radius:0px 0px 0px 30px ;
+    }
+}
+@media(max-width:707px){
+    .dropdown__content{
+        left: 420px;
+    }
+}
+@media(max-width:674px){
+    .dropdown__content{
+        left: 390px;
+    }
+}
+@media(max-width:636px){
+    .dropdown__content{
+        left: 360px;
+    }
+}
+@media(max-width:605px){
+    .dropdown__content{
+        left: 320px;
+    }
+}
+@media(max-width:761px){
+        .burger {
+          position: fixed;
+          top: 14px;
+          right: 50px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          height: 40px;
+          z-index: 100;
+      
+          &_active {
+            cursor: pointer;
+            .burger__line {
+              background: transparent;
+      
+              &::before {
+                content: '';
+                transform: rotate(45deg);
+                background: #838383;
+                top: 0;
+                transition: 0.5s;
+              }
+      
+              &::after {
+                content: '';
+                transform: rotate(-45deg);
+                background: #838383;
+                top: 0;
+                transition: 0.5s;
+              }
+            }
+          }
+      
+          &__line {
+            width: 30px;
+            height: 3px;
+            background: #838383;
+            z-index: 10;
+            position: relative;
+            transition: .5s;
+            cursor: pointer;
+      
+      
+            &::before {
+              content: '';
+              width: 30px;
+              height: 3px;
+              background: #838383;
+              position: absolute;
+              top: -10px;
+              left: 0;
+              transition: .5s;
+      
+            }
+      
+            &::after {
+              content: '';
+              width: 30px;
+              height: 3px;
+              background: #838383;
+              position: absolute;
+              top: 10px;
+              left: 0;
+              transition: .5s;
+      
+            }
+          }
+        }
+    }
+
+@media (max-width:554px){
+    .dropdown__content{
+        left:290px
+    }
+    // .burger{
+    //     left: 270px;
+    // }
+}
+@media(max-width:514px){
+    .dropdown__content{
+        left: 250px;
+    }
+}
+@media(max-width:462px){
+    .dropdown__content{
+        left: 220px;
+    }
+}
+@media(max-width:428px){
+    .dropdown__content{
+        left: 200px;
+    }
+}
+@media(max-width:410px){
+    .dropdown__content{
+        left: 170px;
+    }
+}
+@media(max-width:374px){
+    .dropdown__content{
+        left: 110px;
+    }
+}
+
+// @media(max-width:550px){
+//     .burger{
+//         left: 450px;
+//     }
+// }
+@media(max-width:2075px){
+    .dropdown{
+        left: 600px;
+    }
+}
+@media(max-width:1880px){
+    .dropdown{
+        left: 550px;
+    }
+}
+
+
+@media(max-width:1780px){
+    .dropdown{
+        left: 500px;
+    }
+}
+@media(max-width:1682px){
+    .dropdown{
+        left: 450px;
+    }
+}
+@media(max-width:1585px){
+    .dropdown{
+        left: 400px;
+    }
+}
+@media(max-width:1490px){
+    .dropdown{
+        left: 300px;
+    }
+}
+@media(max-width:1299px){
+    .dropdown{
+        left: 250px;
+    }
+}
+@media(max-width:1205px){
+    .dropdown{
+        left: 200px;
+    }
+}
+@media(max-width:1106px){
+    .dropdown{
+        left: 150px;
+    }
+}
+@media(max-width:1059px){
+    .dropdown{
+        left: 100px;
+    }
+}
+@media(max-width:1019px){
+    .dropdown{
+        left: 400px;
+        top: 110px;
+    }
+}
+@media(max-width:956px){
+    .dropdown{
+        left: 370px;
+    }
+}
+@media(max-width:844px){
+    .dropdown{
+        left: 330px;
+    }
+}
+@media (max-width:792px) {
+    .dropdown{
+        left: 300px;
+    }
+}
+@media(max-width:761px){
+    .dropdown__choose{
+        display: none;
+    }
+}

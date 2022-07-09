@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import './dropdown.scss'
 import * as Md from 'react-icons/md'
 import { DropDownData } from './DropDownData'
 import SubMenu from './SubMenu'
+import './dropdown.scss'
+import './dropdownmedia.scss'
 
 const DropDown = () => {
     const [dropdown, setDropdown] = useState(false)

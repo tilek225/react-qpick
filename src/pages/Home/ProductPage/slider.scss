@@ -30,10 +30,35 @@
       stroke: black !important;
 }
 .swiper-button-next {
-
     right:150px;
     padding: 30px;
     color: #000 !important;
     fill: black !important;
     stroke: black !important;
+}
+@media(max-width:744px){
+  .swiper-button-next{
+    padding-left: 100px;
+  }
+  .swiper-button-prev{
+    padding-right: 100px;
+  }
+}
+@media(max-width:564px){
+  .swiper-button-next{
+    left: 390px;
+  }
+  .swiper-button-prev{
+    left: 20px;
+  }
+}
+@media(max-width:532px){
+  .swiper-button-next{
+    left: 360px;
+  }
+}
+@media(max-width:504px){
+  .swiper-button-next{
+    left: 330px;
+  }
 }

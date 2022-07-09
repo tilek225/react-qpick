@@ -19,6 +19,7 @@ import Contacts from './pages/Service/Contacts/Contacts';
 import 'react-toastify/dist/ReactToastify.css'
 import Profile from './pages/Profile/Profile';
 import Catalog from './pages/Catalog/Catalog'
+import AfterOrder from './pages/Order/AfterOrder';
 
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
           <Route path='service' element={<Service />} />
           <Route path='contacts' element={<Contacts />} />
           <Route path='catalog/:id' element={<Catalog />} />
+          <Route path='afterorder' element={<AfterOrder />} />
         </Route>
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
