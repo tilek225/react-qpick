@@ -1,0 +1,16 @@
+.review{
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 60%;
+    padding: 30px ;
+    & span{
+        margin-bottom: 0;
+    }
+    &__user{
+        margin-bottom: 10px;
+    }
+    &__comment{
+        margin-top: 10px;
+    }
+}

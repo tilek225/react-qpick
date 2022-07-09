@@ -1,0 +1,13 @@
+.service{
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__item{
+        background: #fff;
+        border-radius: 30px;
+        padding: 25px 40px;
+        margin-bottom: 33px;
+    }
+}
