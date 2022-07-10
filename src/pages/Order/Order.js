@@ -70,38 +70,36 @@ const Order = () => {
                 <h2 className='order__mainTitle'>Оформление заказа</h2>
                 <div className='order__inner'>
                     <div className='order__left'>
-                        <div className='order__adress'>
-                            <h3 className='order__title'>
-                                <span>Доставка курьером</span>
-                                <span>{cart.deliveryPrice} сом</span>
+                        <h3 className='order__title'>
+                            <span>Доставка курьером</span>
+                            <span>{cart.deliveryPrice} сом</span>
+                        </h3>
+                        <div className='order__adress-map'>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.7085288302405!2d74.59343961574642!3d42.87899581016328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb73ef59391dd%3A0xd9a25f1216632551!2zSVQtUlVOIC0g0LDQutCw0LTQtdC80LjRjyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjyDQvNC10LbQtNGD0L3QsNGA0L7QtNC90L7Qs9C-INGB0YLQsNC90LTQsNGA0YLQsA!5e0!3m2!1sen!2skg!4v1655889044763!5m2!1sen!2skg"
+                                width="375" className='map' height="146" style={{ border: '0', borderRadius: '10px' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+
+                            </iframe>
+                        </div>
+                        <div className='order__input' >
+                            <h3 className='order__input-title'>
+                                <span><Bi.BiMap /></span>
+                                <span>Адрес доставки</span>
                             </h3>
-                            <div className='order__adress-map'>
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.7085288302405!2d74.59343961574642!3d42.87899581016328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb73ef59391dd%3A0xd9a25f1216632551!2zSVQtUlVOIC0g0LDQutCw0LTQtdC80LjRjyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjyDQvNC10LbQtNGD0L3QsNGA0L7QtNC90L7Qs9C-INGB0YLQsNC90LTQsNGA0YLQsA!5e0!3m2!1sen!2skg!4v1655889044763!5m2!1sen!2skg"
-                                    width="375" className='map' height="146" style={{ border: '0', borderRadius: '10px' }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade">
+                            <form className='order__form'
+                                onSubmit={handleSubmit(addInfo)}
 
-                                </iframe>
-                            </div>
-                            <div className='order__input' >
-                                <h3 className='order__input-title'>
-                                    <span><Bi.BiMap /></span>
-                                    <span>Адрес доставки</span>
-                                </h3>
-                                <form className='order__form'
-                                    onSubmit={handleSubmit(addInfo)}
-
+                            >
+                                <input className='order__form-input' {...register('city')} type='text' placeholder='Город' />
+                                <input className='order__form-input' {...register('street')} type='text' placeholder='Улица/Район' />
+                                <div className='order__form-info'>
+                                    <input className='order__form-extra' {...register('flat')} type='text' placeholder='Квартира' />
+                                    <input className='order__form-extra' {...register('entance')} type='text' placeholder='Подъезд' />
+                                </div>
+                                <input className='order__form-input' {...register('house')} type='text' placeholder='Дом' />
+                                <button type='submit' className='order__button'
                                 >
-                                    <input className='order__form-input' {...register('city')} type='text' placeholder='Город' />
-                                    <input className='order__form-input' {...register('street')} type='text' placeholder='Улица/Район' />
-                                    <div className='order__form-info'>
-                                        <input className='order__form-extra' {...register('flat')} type='text' placeholder='Квартира' />
-                                        <input className='order__form-extra' {...register('entance')} type='text' placeholder='Подъезд' />
-                                    </div>
-                                    <input className='order__form-input' {...register('house')} type='text' placeholder='Дом' />
-                                    <button type='submit' className='order__button'
-                                    >
-                                        Закончить оформление</button>
-                                </form>
-                            </div>
+                                    Закончить оформление</button>
+                            </form>
                         </div>
                     </div>
                     <div className='order__right'>
@@ -112,7 +110,7 @@ const Order = () => {
                                     <div key={item.id} className='order__cart'>
                                         <div className='order__cart-left'>
                                             <span>{item.cartQuantity}x</span>
-                                            {item.title}
+                                            {item.title.length > 15 ? item.title.slice(0, 15) : item.title}
                                         </div>
                                         <div className='order__cart-right'>
                                             {item.price} сом

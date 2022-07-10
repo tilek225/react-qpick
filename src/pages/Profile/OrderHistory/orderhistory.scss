@@ -44,3 +44,19 @@ hr {
     margin: 1em 0;
     padding: 0;
  }
+
+ @media(max-width:521px){
+    .history{
+        &__title{
+            font-size: 1em;
+        }
+        &__card{
+            &-text{
+                font-size: .8em;
+            }
+            &-info{
+                font-size: .8em;
+            }
+        }
+    }
+ }

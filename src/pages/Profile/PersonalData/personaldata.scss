@@ -22,3 +22,21 @@
         color: grey;
     }
 }
+@media(max-width:539px){
+    .data{
+        &__title{
+            font-size: 1em;
+        }
+        &__info{
+            font-size: .8em;
+        }
+    }
+}
+@media(max-width:439px){
+    .data{
+        &__inner{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

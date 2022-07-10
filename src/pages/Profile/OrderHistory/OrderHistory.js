@@ -1,15 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import HistoryCard from './HistoryCard'
-import { useSelector, useDispatch } from 'react-redux'
-import { db } from '../../../firebase/firebase'
-import { findUser } from '../../../redux/reducers/user'
-import { getDocs, collection } from 'firebase/firestore'
+import { useSelector } from 'react-redux'
 import './orderhistory.scss'
 
 const OrderHistory = () => {
     const user = useSelector(store => store.user.user)
-    const dispatch = useDispatch()
-
     return (
         <div className='history'>
             <h3 className='history__title'>История заказов</h3>
@@ -26,7 +21,6 @@ const OrderHistory = () => {
                         {item.carts.map(item => {
                             return (
                                 <div key={item.id}>
-
                                     <HistoryCard item={item} />
                                 </div>
                             )

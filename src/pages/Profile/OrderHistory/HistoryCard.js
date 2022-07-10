@@ -1,9 +1,7 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
 
 const HistoryCard = ({ item }) => {
     const _id = item.id.slice(0, 10)
-    const user = useSelector(store => store.user.user)
     return (
         <div className='history__card'>
             <hr />
@@ -12,7 +10,7 @@ const HistoryCard = ({ item }) => {
                     <p>{_id}</p>
                 </div>
                 <div className='history__card-info'>
-                    <p>{item.title}</p>
+                    <p>{item.title.length > 10 ? item.title.slice(0, 10) : item.title}</p>
                 </div>
                 <div className='history__card-info'>
                     <p>{item.cartQuantity}</p>

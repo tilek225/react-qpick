@@ -2,7 +2,7 @@
     margin-bottom: 20px;
     border: 1px solid lightgray;
     border-radius: 10px;
-    width: 60%;
+    width: 70%;
     padding: 30px ;
     & span{
         margin-bottom: 0;
@@ -12,5 +12,10 @@
     }
     &__comment{
         margin-top: 10px;
+    }
+}
+@media(max-width:395px){
+    .review{
+        width: 90%;
     }
 }

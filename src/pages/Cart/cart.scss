@@ -299,3 +299,16 @@
         }
     }
 }
+@media(max-width:537px){
+    .cart{
+        &__empty{
+            &-btn{
+                font-size: 1em;
+                padding: 13px 46px;
+            }
+            &-img{
+                width: 300px;
+            }
+        }
+    }
+}

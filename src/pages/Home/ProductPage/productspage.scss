@@ -124,9 +124,22 @@
 }
 @media(max-width:628px){
     .product__textarea{
-        width: 70%;
+        width: 100%;
     }
     .product__form{
-        width: 70%;
+        width: 100%;
+    }
+}
+@media(max-width:347px){
+    .product__review-btns{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .product__btn-sort{
+        width: 100%;
+    }
+    .product__noactive{
+        width: 100%;
     }
 }

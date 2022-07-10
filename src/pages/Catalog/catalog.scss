@@ -12,3 +12,10 @@
         column-gap: 100px;
     }
 }
+@media(max-width:955px){
+    .catalog__inner{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}

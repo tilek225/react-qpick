@@ -16,10 +16,11 @@ import { ToastContainer } from 'react-toastify'
 import Order from './pages/Order/Order';
 import Service from './pages/Service/Service';
 import Contacts from './pages/Service/Contacts/Contacts';
-import 'react-toastify/dist/ReactToastify.css'
 import Profile from './pages/Profile/Profile';
 import Catalog from './pages/Catalog/Catalog'
 import AfterOrder from './pages/Order/AfterOrder';
+import 'react-toastify/dist/ReactToastify.css'
+
 
 
 function App() {
@@ -34,9 +35,6 @@ function App() {
     localStorage.getItem('user') ?
       dispatch(findUser({ user: JSON.parse(localStorage.getItem('user')) })) : console.log('empty')
   }, [])
-
-
-
 
   return (
     <div className="App">

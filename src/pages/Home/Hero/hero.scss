@@ -66,3 +66,15 @@
         right: 0;
     }
 }
+@media(max-width:569px){
+    .hero{
+        &__inner{
+            padding-left: 60px;
+        }
+    }
+}
+@media(max-width:523px){
+    .hero{
+        display: none;
+    }
+}
